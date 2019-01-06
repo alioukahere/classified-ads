@@ -29,6 +29,7 @@ nav {
   justify-content: space-between;
   background-color: #fff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 nav a {
   text-decoration: none;
@@ -64,6 +65,12 @@ nav ul li a.bg-primary {
   text-transform: capitalize;
 }
 
+/* content */
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
 /* sidebar */
 .sidebar {
   width: calc(300px - 1.5rem);
@@ -89,11 +96,54 @@ nav ul li a.bg-primary {
   transition: all 0.5s;
 }
 .sidebar ul.categories li a:hover {
-  color: #46586A;
+  color: #46586a;
 }
 .sidebar ul.categories li a i {
   width: 42px;
   font-size: 22px;
+}
+
+/* main content */
+.main-content {
+  background-color: #d5d8e3;
+  z-index: -1;
+  width: 100%;
+}
+.main-content .hero {
+  background: url("https://images.pexels.com/photos/749353/pexels-photo-749353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.main-content .hero:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.main-content .hero h1 {
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+.main-content .hero h2 {
+  font-family: "Lato";
+  font-weight: normal;
+  width: 60%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=app.css.map */
