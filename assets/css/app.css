@@ -22,6 +22,26 @@ h6 {
   color: #000;
 }
 
+.btn {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: red;
+}
+.btn.btn-primary {
+  background-color: #ffc927;
+  color: #000;
+}
+.btn.btn-primary:hover {
+  background-color: red;
+}
+
 /* navbar */
 nav {
   display: flex;
@@ -108,6 +128,7 @@ nav ul li a.bg-primary {
   background-color: #d5d8e3;
   z-index: -1;
   width: 100%;
+  /* search bar */
 }
 .main-content .hero {
   background: url("https://images.pexels.com/photos/749353/pexels-photo-749353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
@@ -121,7 +142,7 @@ nav ul li a.bg-primary {
   align-items: center;
   color: #fff;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 .main-content .hero:after {
   position: absolute;
@@ -144,6 +165,43 @@ nav ul li a.bg-primary {
   font-weight: normal;
   width: 60%;
   text-align: center;
+}
+.main-content .search-bar {
+  width: 70%;
+  margin: auto;
+  z-index: 5;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: -40px;
+}
+.main-content .search-bar form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-content .search-bar form .input-field:first-child {
+  width: 50%;
+}
+.main-content .search-bar form .input-field:nth-child(2) {
+  width: 30%;
+}
+.main-content .search-bar form .input-field:last-child {
+  width: 20%;
+  text-align: right;
+}
+
+/* form */
+form input[type=text] {
+  border: none;
+  outline: none;
+  border: 1px solid #dfdfdf;
+  padding: 1rem 1rem;
+  font-size: 18px;
+  width: calc(100% - 2rem);
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */
