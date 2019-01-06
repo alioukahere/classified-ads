@@ -17,6 +17,10 @@ h6 {
   font-family: "Bree Serif";
 }
 
+.center-align {
+  text-align: center;
+}
+
 .bg-primary {
   background-color: #ffc927;
   color: #000;
@@ -29,6 +33,7 @@ h6 {
   font-size: 18px;
   text-transform: uppercase;
   transition: all 0.5s;
+  text-decoration: none;
 }
 .btn:hover {
   cursor: pointer;
@@ -40,6 +45,13 @@ h6 {
 }
 .btn.btn-primary:hover {
   background-color: #f3b600;
+}
+.btn.btn-primary.btn-transparent {
+  background-color: transparent;
+  border: 2px solid #ffc927;
+}
+.btn.btn-primary.btn-transparent:hover {
+  background-color: #ffc927;
 }
 
 /* navbar */
@@ -254,8 +266,28 @@ nav ul li a.bg-primary {
 
 .category-card {
   margin: 20px;
-  background-color: red;
-  width: 120px;
+  width: 300px;
+  height: 320px;
+  background: url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone8/gallery1/iphone8-gallery1-2017_FMT_WHH?wid=582&hei=776&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1506703278228");
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.category-card.top {
+  align-items: flex-start;
+}
+.category-card.bottom {
+  align-items: flex-end;
+}
+.category-card span.title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 /* footer */
