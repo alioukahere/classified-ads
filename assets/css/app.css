@@ -258,6 +258,34 @@ nav ul li a.bg-primary {
   width: 120px;
 }
 
+/* footer */
+footer {
+  text-transform: uppercase;
+}
+footer .top-footer {
+  padding: 4rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #bbbbbb;
+}
+footer .top-footer ul li {
+  display: inline-block;
+}
+footer .top-footer ul li:not(:last-child) {
+  margin-right: 20px;
+}
+footer .top-footer ul li a {
+  text-decoration: none;
+  color: #46586a;
+}
+footer .bottom-footer {
+  padding: 1rem;
+  font-size: 14px;
+  text-align: center;
+}
+
 /* form */
 form input[type=text] {
   border: none;

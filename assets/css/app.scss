@@ -305,6 +305,41 @@ nav {
   width: 120px;
 }
 
+/* footer */
+footer {
+  text-transform: uppercase;
+
+  .top-footer {
+    padding: 4rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #bbbbbb;
+
+    ul {
+      li {
+        display: inline-block;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+
+        a {
+          text-decoration: none;
+          color: #46586a;
+        }
+      }
+    }
+  }
+
+  .bottom-footer {
+    padding: 1rem;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
 /* form */
 form {
   input[type="text"] {
